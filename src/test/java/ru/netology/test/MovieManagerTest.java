@@ -24,9 +24,9 @@ class MovieManagerTest {
         String[] expected = {"Movie 6", "Movie 5", "Movie 4", "Movie 3", "Movie 2"};
         assertArrayEquals(expected, movieManager.findLast());
     }
-
     @Test
     public void defaultLimit() {
+
         MovieManager movieManager = new MovieManager(3);
         movieManager.addMovie("Movie 1");
         movieManager.addMovie("Movie 2");
