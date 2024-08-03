@@ -20,7 +20,6 @@ class MovieManagerTest {
         movieManager.addMovie("Movie 4");
         movieManager.addMovie("Movie 5");
         movieManager.addMovie("Movie 6");
-
         String[] expected = {"Movie 6", "Movie 5", "Movie 4", "Movie 3", "Movie 2"};
         assertArrayEquals(expected, movieManager.findLast());
     }
